@@ -10,10 +10,16 @@
 
 <script>
 
-    var obj1={'name':'chandu','age':25};
+    var obj1={
+        'name':'chandu',
+        lastName:"S",
+        'age':25,
+        fullname: function () {
+            return this.name + this.lastName;
+        }
+    };
 
-document.getElementById("demo").innerHTML ="Employee Name is "+obj1.name;
-
+document.getElementById("demo").innerHTML ="Employee Name is "+obj1.fullname();
 
 </script>
 
