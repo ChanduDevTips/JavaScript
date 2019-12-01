@@ -2,24 +2,30 @@
 <html>
 <body>
 
-<h2>JavaScript</h2>
+<h2>JavaScript Functions </h2>
 
 <p></p>
 
+<p id="demo1"></p>
 <p id="demo"></p>
-
+<p id="indexof"></p>
+<p id="lastindexof"></p>
+<p id="search"></p>
+<p id="substr" ></p>
+<p id="slice"></p>
+<p id="slice1"></p>
 <script>
 
-    var obj1={
-        'name':'chandu',
-        lastName:"S",
-        'age':25,
-        fullname: function () {
-            return this.name + this.lastName;
-        }
-    };
+    var Str="chandu is \"from\" is Bangalore ";
 
-document.getElementById("demo").innerHTML ="Employee Full Name is "+obj1.fullname();
+    document.getElementById("demo1").innerHTML ="len"+Str.length;
+    document.getElementById("demo").innerHTML ='string'+Str;
+    document.getElementById("indexof").innerHTML ='indexof'+Str.indexOf("is");
+    document.getElementById("lastindexof").innerHTML ='lastindex'+Str.lastindexOf("is");
+    document.getElementById("search").innerHTML ='search'+Str.search("is");
+    document.getElementById("slice1").innerHTML ='slice'+Str.slice(0,5);
+    document.getElementById("slice").innerHTML ='slice negative '+Str.slice(-5);
+    document.getElementById("substr").innerHTML ='substring'+Str.substr(5,5);
 
 </script>
 
