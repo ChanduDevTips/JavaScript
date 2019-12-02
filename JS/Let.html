@@ -7,14 +7,17 @@
 <p id="demo"></p>
 
 <script>
-    var  x = 10;
+    var x=10;
     // Here x is 10
     {
-        var x = 2;
-      console.log(x);
+        let x = 2;
+        console.log(x);
     }
-    // Here x is 2
-    console.log(x);
+
+    console.log(x);  //Uncaught ReferenceError: x is not defined
+
+
+
 </script>
 
 </body>
